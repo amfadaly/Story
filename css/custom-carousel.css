@@ -1,0 +1,80 @@
+.owl-carousel {
+  touch-action: manipulation;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev,
+.our-partners .owl-carousel .owl-nav .owl-next,
+.customer .owl-carousel .owl-nav .owl-prev,
+.customer .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  background: none;
+  top: 33%;
+}
+.our-partners .owl-carousel .slide-arrow,
+.customer .owl-carousel .slide-arrow {
+  border: none;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  border-radius: 50%;
+  background: #ffffff;
+  color: #1ea4ce;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 3.22px 48.29px 0px #292c7c26;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev,
+.customer .owl-carousel .owl-nav .owl-prev {
+  position: absolute;
+  left: -70px;
+}
+.our-partners .owl-carousel .owl-nav .owl-next,
+.customer .owl-carousel .owl-nav .owl-next {
+  position: absolute;
+  right: -70px;
+}
+.our-partners .owl-carousel .owl-nav .owl-prev:hover,
+.our-partners .owl-carousel .owl-nav .owl-next:hover {
+  background-color: inherit;
+}
+@media (max-width: 991px) {
+  .our-partners .owl-carousel .owl-nav .owl-prev,
+  .customer .owl-carousel .owl-nav .owl-prev {
+    left: 0;
+  }
+  .our-partners .owl-carousel .owl-nav .owl-next,
+  .customer .owl-carousel .owl-nav .owl-next {
+    right: 0;
+  }
+  .our-partners .owl-carousel .slide-arrow,
+  .customer .owl-carousel .slide-arrow {
+    display: none;
+  }
+}
+
+.our-partners .item img {
+  width: 224px;
+  height: 224px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.main-section .owl-dots {
+  position: absolute;
+  bottom: 21px;
+  display: flex;
+  justify-content: center;
+  right: 0;
+  left: 0;
+}
+
+.main-section .owl-theme .owl-dots .owl-dot span {
+  background-color: #f0efef80;
+  width: 18px;
+  height: 18px;
+}
+.main-section .owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fff;
+}

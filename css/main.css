@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+@font-face {
+  font-family: myfont;
+  src: url(../webfonts/alfont_com_خط-جذور-فلات-عريض-1.ttf) format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+}
+:root {
+  --main-color: #e93b81;
+  --second-color: #a2d8f0;
+}
+body {
+  font-family: myfont;
+}
+
+button:focus,
+input:focus,
+textarea:focus,
+select:focus,
+a:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.text-h2 {
+  color: #e93b81;
+  border-bottom: solid 3px #e93b81;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 95.86px;
+  font-weight: 700;
+  line-height: 120.88px;
+}
+@media (max-width: 991px) {
+  .text-h2 {
+    font-size: 35px;
+    line-height: 60px;
+  }
+}
+/* start header ------- */
+.header .logo img {
+  width: 158.41px;
+  height: 53.52px;
+  object-fit: contain;
+}
+.header .list li a {
+  color: #535353;
+  font-size: 16px;
+  font-weight: 500;
+}
+.header .list li {
+  padding: 0 0 0 30px;
+}
+
+.header .list li a.active {
+  border-bottom: solid 2px var(--main-color);
+  display: inline-block;
+}
+.header .navbar-toggler,
+.header .Close {
+  color: var(--main-color);
+}
+
+.header .login {
+  background-color: var(--main-color);
+}
+@media (max-width: 991px) {
+  .header .list li {
+    margin-bottom: 10px;
+  }
+  .header .offcanvas-slide {
+    background-color: #eaeaea;
+  }
+}
+@media (max-width: 1200px) {
+  .header .list li {
+    padding: 0 0 0 8px;
+  }
+}
+/* end header ------- */
+
+/* start main-section ---- */
+.main-section .container {
+  background: linear-gradient(77.27deg, #a7dbf0 15.12%, #e04e9b 44.6%);
+  width: 100%;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 29px;
+  -webkit-border-radius: 29px;
+  -moz-border-radius: 29px;
+  -ms-border-radius: 29px;
+  -o-border-radius: 29px;
+  height: 500px;
+  overflow: hidden;
+}
+.main-section .title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 60px;
+}
+.main-section .title p {
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: -1.5925170183181763px;
+}
+.main-section .title a {
+  background-color: #a2d8f0;
+  padding: 10.86px 76.05px 10.86px 76.05px;
+  gap: 36.22px;
+  border-radius: 8px;
+  color: #638492;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+@media (max-width: 991px) {
+  .main-section .container {
+    height: auto;
+  }
+  .main-section .title h1 {
+    font-size: 40px;
+  }
+  .main-section .title p {
+    font-size: 22px !important;
+  }
+  .main-section .img-box {
+    position: static !important;
+  }
+}
+/* end main-section ---- */
+
+/* start services ---- */
+.services .bg-services {
+  background-color: #f6fafb;
+}
+.services .title h2 {
+  font-size: 61.83px;
+  font-weight: 700;
+  line-height: 115.87px;
+}
+.services .bg-services .box {
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  -o-border-radius: 36px;
+  position: relative;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 0.6s ease-out;
+}
+.services .bg-services .box:hover {
+  transform: translate(0, -10px);
+}
+.services .bg-services .box:hover button {
+  background-color: var(--second-color);
+  color: #fff;
+}
+.services .bg-services .box img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+}
+.services .bg-services .box button {
+  background-color: #dbf0f9;
+  border-radius: 36px;
+  -webkit-border-radius: 36px;
+  -moz-border-radius: 36px;
+  -ms-border-radius: 36px;
+  -o-border-radius: 36px;
+  font-weight: 600;
+}
+@media (max-width: 991px) {
+  .services .title h2 {
+    font-size: 40px;
+  }
+}
+/* end services ---- */
+
+/* start our-services ---- */
+.choose-story::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/ellipse-2.png);
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 600px;
+  z-index: -1;
+}
+.bg-about-us::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/ellipse.png);
+  background-size: cover;
+  background-position: center;
+  right: 0;
+  top: 50px;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 600px;
+  z-index: -1;
+}
+.choose-story .desc ul li {
+  margin-bottom: 15px;
+  font-size: 30px;
+  line-height: 50px;
+}
+.choose-story .desc ul li::marker {
+  color: var(--main-color);
+}
+.choose-story .desc ul li strong {
+  color: var(--main-color);
+}
+@media (max-width: 991px) {
+  .our-services .desc ul li,
+  .choose-story .desc ul li {
+    font-size: 22px;
+    line-height: 40px;
+  }
+  .bg-about-us::before {
+    width: 300px;
+  }
+}
+
+/* start marriage --- */
+.marriage .bg-marriage {
+  background-image: url(../images/bg-marriage.png);
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.marriage .bg-marriage h2 {
+  color: #1c274c;
+}
+.marriage .bg-marriage a {
+  background-color: var(--main-color);
+}
+.worry-marriage .bg-worry-marriage {
+  background: linear-gradient(77.27deg, #a7dbf0 15.12%, #e04e9b 44.6%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.worry-marriage .bg-worry-marriage p {
+  font-size: 25px;
+  font-weight: 600;
+}
+.worry-marriage .bg-worry-marriage a {
+  background-color: var(--second-color);
+}
+
+.questions .accordion-button::after {
+  margin-right: auto;
+  margin-left: inherit;
+}
+.questions .accordion-button {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 49.1px;
+}
+/* start customer ------ */
+.customer .item {
+  border-radius: 16px;
+  border: 1px solid #ddd7d9;
+  padding: 45px 33px 45px 33px !important;
+}
+.customer .item img {
+  width: 80px;
+  height: 80px;
+}
+.customer .item h3 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.customer .item h6 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 32.2px;
+  color: #938d90;
+}
+.customer .item p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 32.2px;
+  text-align: right;
+}
+
+/* start subscription */
+.subscription .image-wrapper {
+  background: var(--main-color);
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border-radius: 0 30px 30px 0;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  -ms-border-radius: 0 30px 30px 0;
+  -o-border-radius: 0 30px 30px 0;
+  position: relative;
+}
+.subscription .image-wrapper .desc {
+  position: absolute;
+  top: 30%;
+  color: #fff;
+  font-size: 40px;
+  right: 60px;
+  left: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-family: myfont;
+}
+.subscription .image-wrapper .desc h3 {
+  font-family: myfont;
+  font-size: 80.35px;
+  font-weight: 600;
+  line-height: 80.56px;
+}
+.subscription .image-wrapper .desc p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40.99px;
+  text-align: center;
+  color: #e0e0e0;
+}
+.subscription .formdiv {
+  background-color: #dbf0f9;
+  border-radius: 30px 0 0 30px;
+}
+@media (max-width: 991px) {
+  .subscription .image-wrapper {
+    border-radius: 30px 30px 0 0;
+  }
+  .subscription .formdiv {
+    border-radius: 0 0 30px 30px;
+  }
+  .subscription .image-wrapper .desc {
+    font-size: 30px;
+  }
+}
+.subscription .formdiv form label {
+  color: #000;
+  font-size: 500;
+}
+.subscription .formdiv form input {
+  background: none;
+  border: 0;
+  border-bottom: solid 1px #000;
+  border-radius: 0;
+  color: #000;
+  cursor: pointer;
+}
+.subscription .formdiv form button {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 22.94px 73.42px 22.94px 73.42px;
+}
+
+/* start footer -------- */
+.footer {
+  background-color: #f3f6f9;
+}
+.footer li {
+  margin-bottom: 12px;
+}
+.footer li a {
+  color: #1c1b1b;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.footer a:hover {
+  color: #1c1b1b;
+}
+.footer p {
+  color: #1c1b1b;
+}
+.footer .copyrightd p,
+.footer .copyrightd a {
+  color: #1c1b1b;
+  font-family: sans-serif;
+}
+.footer .copyrightd a {
+  text-decoration: none;
+}
+/* end footer -------- */
